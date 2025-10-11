@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My RSS Reader</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .entry {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .entry h2 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .entry a {
+            text-decoration: none;
+            color: #007acc;
+        }
+        .entry a:hover {
+            text-decoration: underline;
+        }
+        .feed-name {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .published {
+            font-size: 0.8rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <h1>🗞️ My RSS Feed Reader</h1>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/07/08/readline/" target="_blank">Entering text in the terminal is complicated</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/08/06/go-structs-copied-on-assignment/" target="_blank">Go structs are copied on assignment (and other things about Go I'd missed)</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/08/19/migrating-mess-with-dns-to-use-powerdns/" target="_blank">Migrating Mess With DNS to use PowerDNS</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/09/12/reasons-i--still--love-fish/" target="_blank">Reasons I still love the fish shell</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/09/27/some-go-web-dev-notes/" target="_blank">Some Go web dev notes</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/10/01/terminal-colours/" target="_blank">Terminal colours are tricky</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/10/07/some-notes-on-upgrading-hugo/" target="_blank">Some notes on upgrading Hugo</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/10/27/asn-ip-address-memory/" target="_blank">Using less memory to look up IP addresses in Mess With DNS</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/10/31/ascii-control-characters/" target="_blank">ASCII control characters in my terminal</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/11/09/new-microblog/" target="_blank">New microblog with TILs</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/11/18/how-to-import-a-javascript-library/" target="_blank">Importing a frontend Javascript library without a build system</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/11/29/why-pipes-get-stuck-buffering/" target="_blank">Why pipes sometimes get "stuck": buffering</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2024/11/26/terminal-rules/" target="_blank">"Rules" that terminal programs follow</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2025/01/11/getting-a-modern-terminal-setup/" target="_blank">What's involved in getting a "modern" terminal setup?</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2025/02/05/some-terminal-frustrations/" target="_blank">Some terminal frustrations</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2025/02/13/how-to-add-a-directory-to-your-path/" target="_blank">How to add a directory to your PATH</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2025/03/07/escape-code-standards/" target="_blank">Standards for ANSI escape codes</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2025/06/10/how-to-compile-a-c-program/" target="_blank">Using `make` to compile C programs (for non-C-programmers)</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2025/06/24/new-zine--the-secret-rules-of-the-terminal/" target="_blank">New zine: The Secret Rules of the Terminal</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://jvns.ca/blog/2025/10/10/notes-on-switching-to-helix-from-vim/" target="_blank">Notes on switching to Helix from vim</a></h2>
+            <div class="feed-name">Julia Evans</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2014/10/13/why-threads-cant-fork/" target="_blank">Why threads can't fork</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2014/11/20/unicorn-unix-magic-tricks/" target="_blank">Unicorn Unix Magic Tricks</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2016/11/16/putting-eval-in-go/" target="_blank">Putting Eval In Go</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2015/10/22/write-stupid-code/" target="_blank">Write Stupid Code</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2016/11/30/why-i-wrote-a-book-about-interpreters/" target="_blank">Why I Wrote a Book About Interpreters</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2017/01/04/a-virtual-brainfuck-machine-in-go/" target="_blank">A Virtual Brainfuck Machine In Go</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2017/01/16/what-i-didnt-do-to-write-a-book/" target="_blank">What I didn't do to write a book</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2017/02/08/higher-value-tools/" target="_blank">Higher Value Tools</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2017/02/22/writing-an-interpreter-in-go-the-paperback-edition/" target="_blank">Writing An Interpreter In Go: The Paperback Edition</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2017/06/28/the-lost-chapter-a-macro-system-for-monkey/" target="_blank">The Lost Chapter: A Macro System For Monkey</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2018/08/14/paperback-writing-a-compiler-in-go/" target="_blank">The Paperback Edition of Writing A Compiler In Go</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2018/09/04/the-tools-i-use-to-write-books/" target="_blank">The Tools I Use To Write Books</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2019/04/09/learn-more-programming-languages/" target="_blank">Learn more programming languages, even if you won't use them</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/" target="_blank">How much do we bend to the will of our tools?</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2020/05/22/what-you-think-is-bad-about-remote-work-can-actually-be-good/" target="_blank">What you think is bad about remote work, can, well, actually be good.</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2020/08/25/but-does-it-help-you-ship/" target="_blank">But does it help you ship?</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2020/09/01/typing-can-be-the-bottleneck/" target="_blank">No, typing can be the bottleneck</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2020/09/08/how-can-you-not-be-romantic-about-programming/" target="_blank">How can you not be romantic about programming?</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2022/05/17/professional-programming-the-first-10-years/" target="_blank">Professional Programming: The First 10 Years</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="http://thorstenball.com/blog/2020/09/15/the-context-in-which-we-build-software/" target="_blank">The context in which we build software</a></h2>
+            <div class="feed-name">Thorsten Ball</div>
+        <div class="published">
+            
+                2025-10-11 21:28
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://rmoff.net/2025/10/06/stumbling-into-ai-part-5agents/" target="_blank">Stumbling into AI: Part 5—Agents</a></h2>
+            <div class="feed-name">rmoff's random ramblings</div>
+        <div class="published">
+            
+                2025-10-06 07:00
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://rmoff.net/2025/09/30/interesting-links-september-2025/" target="_blank">Interesting links - September 2025</a></h2>
+            <div class="feed-name">rmoff's random ramblings</div>
+        <div class="published">
+            
+                2025-09-30 07:00
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://rmoff.net/2025/09/16/stumbling-into-ai-part-4terminology-tidy-up-and-a-little-rant/" target="_blank">Stumbling into AI: Part 4—Terminology Tidy-up (and a little rant)</a></h2>
+            <div class="feed-name">rmoff's random ramblings</div>
+        <div class="published">
+            
+                2025-09-16 07:00
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://rmoff.net/2025/09/12/stumbling-into-ai-part-3rag/" target="_blank">Stumbling into AI: Part 3—RAG</a></h2>
+            <div class="feed-name">rmoff's random ramblings</div>
+        <div class="published">
+            
+                2025-09-12 07:00
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://rmoff.net/2025/09/08/stumbling-into-ai-part-2models/" target="_blank">Stumbling into AI: Part 2—Models</a></h2>
+            <div class="feed-name">rmoff's random ramblings</div>
+        <div class="published">
+            
+                2025-09-08 07:00
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://rmoff.net/2025/09/04/stumbling-into-ai-part-1mcp/" target="_blank">Stumbling into AI: Part 1—MCP</a></h2>
+            <div class="feed-name">rmoff's random ramblings</div>
+        <div class="published">
+            
+                2025-09-04 07:00
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://blog.pragmaticengineer.com/creative-ways-to-fund-open-source-projects/" target="_blank">Creative ways to fund open source projects</a></h2>
+            <div class="feed-name">The Pragmatic Engineer</div>
+        <div class="published">
+            
+                2025-08-21 16:46
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://rmoff.net/2025/08/21/interesting-links-august-2025/" target="_blank">Interesting links - August 2025</a></h2>
+            <div class="feed-name">rmoff's random ramblings</div>
+        <div class="published">
+            
+                2025-08-21 07:00
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://rmoff.net/2025/08/18/kafka-to-iceberg-exploring-the-options/" target="_blank">Kafka to Iceberg - Exploring the Options</a></h2>
+            <div class="feed-name">rmoff's random ramblings</div>
+        <div class="published">
+            
+                2025-08-18 07:00
+            
+        </div>
+        </div>
+    
+        <div class="entry">
+            <h2><a href="https://blog.pragmaticengineer.com/new-trend-extreme-hours-at-ai-startups/" target="_blank">New trend: extreme hours at AI startups</a></h2>
+            <div class="feed-name">The Pragmatic Engineer</div>
+        <div class="published">
+            
+                2025-08-14 16:35
+            
+        </div>
+        </div>
+    
+</body>
+</html>

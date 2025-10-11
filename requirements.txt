@@ -1,0 +1,5 @@
+aiohttp>=3.8
+asyncpg>=0.27
+feedparser>=6.0
+python-dateutil>=2.8
+aiodns>=3.0            
