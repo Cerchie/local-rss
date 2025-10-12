@@ -160,28 +160,30 @@ reader/
 ✨ Example Output
 After running generate_html.py, your index.html will show a simple feed reader like this:
 
-yaml
 
+```yaml
 🗞️ My RSS Feed Reader
 ──────────────────────────────
 Title: Kafka Blog
 Feed: blog.net
 Published: 2025-10-08
 [Open Link]
+```
 
 🧭 ### Troubleshooting Tips
 
-If feeds aren’t being fetched:
+<i> If feeds aren’t being fetched: </i>
 
 Ensure their next_poll_at ≤ now().
 
 Check last_error in the feeds table.
 
-If nothing appears in HTML:
+<i> If nothing appears in HTML: </i>
 
 Run the SQL query manually to confirm entries exist.
 
-To clean up and start fresh:
+
+<i> To clean up and start fresh: </i>
 
 ```sql
 TRUNCATE entries, feeds RESTART IDENTITY;
