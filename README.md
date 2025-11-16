@@ -1,4 +1,5 @@
 # 🗞️ Local RSS Reader
+# 🚫 Warning: this is a heavily vibe-coded experiment I used to learn about RSS feeds. Use at your own peril.
 
 A local, database-backed RSS reader that fetches posts from your favorite feeds, stores them in PostgreSQL, and generates a clean static HTML page you can open in your browser.
 
